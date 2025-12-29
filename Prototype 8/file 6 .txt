@@ -1,0 +1,61 @@
+ MCD – Modèle Conceptuel de Données (MERISE)
+
+🔹 Entités
+
+-UTILISATEUR
+
+id_utilisateur
+
+nom
+
+email
+
+mot_de_passe
+
+-ARTICLE
+
+id_article
+
+titre
+
+contenu
+
+image
+
+date_publication
+
+-COMMENTAIRE
+
+id_commentaire
+
+contenu
+
+auteur
+
+date_commentaire
+
+🔹 Relations + cardinalités
+
+1️) UTILISATEUR — écrit — ARTICLE
+
+Un utilisateur peut écrire plusieurs articles
+
+Un article est écrit par un seul utilisateur
+
+-- Cardinalités :
+
+UTILISATEUR (1,N)
+
+ARTICLE (1,1)
+
+2️) ARTICLE — reçoit — COMMENTAIRE
+
+Un article peut recevoir plusieurs commentaires
+
+Un commentaire appartient à un seul article
+
+-- Cardinalités :
+
+ARTICLE (1,N)
+
+COMMENTAIRE (1,1)
