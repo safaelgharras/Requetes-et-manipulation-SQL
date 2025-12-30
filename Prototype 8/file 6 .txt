@@ -59,3 +59,15 @@ Un commentaire appartient à un seul article
 ARTICLE (1,N)
 
 COMMENTAIRE (1,1)
+ 
+3)UTILISATEUR - écrit - COMMENTAIRE
+
+Un utilisateur peut commenter plusieurs articles différents.
+
+Un commentaire ne peut pas appartenir à plusieurs utilisateurs
+
+-- Cardinalités :
+
+Utilisateur (1, N)
+
+Commentaire (1,1)
